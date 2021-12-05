@@ -19,7 +19,6 @@ def single_digit(n):
     while len(list(str(n))) > 1:
         n = sum([int(x) for x in format(n, 'b')])
     return n
-    # while len(list(n)) > 1:
 
 
 print(single_digit(5665))
