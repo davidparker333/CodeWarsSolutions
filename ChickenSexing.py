@@ -15,7 +15,7 @@ def correctness(bobs_decisions, expert_decisions):
             score += 1
         elif x == '?' or expert_decisions[i] == '?':
             score += .5
-    return int(score)
+    return score
 
 
 print(correctness(('F', 'F', 'M', 'M', 'M'), ('M', '?', 'F', 'F', 'F')))
