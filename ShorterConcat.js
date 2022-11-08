@@ -5,7 +5,7 @@
 // Strings a and b may be empty, but not null (In C# strings may also be null. Treat them as if they are empty.).
 // If a and b have the same length treat a as the longer producing b+reverse(a)+b
 
-shorter_reverse_longer = (a, b) => {
+const shorter_reverse_longer = (a, b) => {
   let sortd;
   if (a.length !== b.length) {
     sortd = [a, b].sort((x, y) => x.length - y.length);
